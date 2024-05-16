@@ -36,6 +36,7 @@
             btn_Save = new Button();
             pnl_Main = new Panel();
             lst_Main = new ListBox();
+            lbl_Count = new Label();
             tblp_Main.SuspendLayout();
             pnl_Main.SuspendLayout();
             SuspendLayout();
@@ -50,6 +51,7 @@
             tblp_Main.Controls.Add(btn_Remove, 1, 2);
             tblp_Main.Controls.Add(btn_Save, 0, 3);
             tblp_Main.Controls.Add(pnl_Main, 0, 1);
+            tblp_Main.Controls.Add(lbl_Count, 1, 0);
             tblp_Main.Dock = DockStyle.Fill;
             tblp_Main.Location = new Point(0, 0);
             tblp_Main.Name = "tblp_Main";
@@ -132,16 +134,28 @@
             lst_Main.Dock = DockStyle.Fill;
             lst_Main.ForeColor = Color.FromArgb(241, 241, 241);
             lst_Main.FormattingEnabled = true;
-            lst_Main.ItemHeight = 14;
+            lst_Main.ItemHeight = 18;
             lst_Main.Location = new Point(0, 0);
             lst_Main.Margin = new Padding(1);
             lst_Main.Name = "lst_Main";
             lst_Main.Size = new Size(476, 249);
             lst_Main.TabIndex = 0;
             // 
+            // lbl_Count
+            // 
+            lbl_Count.AutoSize = true;
+            lbl_Count.Dock = DockStyle.Fill;
+            lbl_Count.Location = new Point(243, 1);
+            lbl_Count.Margin = new Padding(1);
+            lbl_Count.Name = "lbl_Count";
+            lbl_Count.Size = new Size(240, 18);
+            lbl_Count.TabIndex = 6;
+            lbl_Count.Text = "0";
+            lbl_Count.TextAlign = ContentAlignment.BottomRight;
+            // 
             // frm_Main
             // 
-            AutoScaleDimensions = new SizeF(7F, 14F);
+            AutoScaleDimensions = new SizeF(8F, 18F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(38, 38, 39);
             ClientSize = new Size(484, 361);
@@ -168,5 +182,6 @@
         private Button btn_Save;
         private Panel pnl_Main;
         private ListBox lst_Main;
+        private Label lbl_Count;
     }
 }

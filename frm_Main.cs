@@ -29,6 +29,7 @@ namespace GCScript_Text_File_Joiner
 
                     lst_Main.Items.Add(file);
                 }
+                lbl_Count.Text = lst_Main.Items.Count.ToString();
             }
         }
 
@@ -42,6 +43,7 @@ namespace GCScript_Text_File_Joiner
                 {
                     lst_Main.SelectedIndex = index > 0 ? index - 1 : 0;
                 }
+                lbl_Count.Text = lst_Main.Items.Count.ToString();
             }
         }
 
